@@ -43,6 +43,15 @@
     .page { box-shadow: none; margin: 0; max-width: 100%; border-radius: 0; }
     .print-btn { display: none !important; }
     @page { margin: 10mm; size: A4; }
+
+    .section-label { break-after: avoid; page-break-after: avoid; }
+    .spectrum,
+    .script-box,
+    .profile-card,
+    .event-box,
+    .flags,
+    .payoff,
+    .reminder { break-inside: avoid; page-break-inside: avoid; }
   }
 
   .print-btn {
@@ -510,7 +519,7 @@
     <div class="header-top">
       <div class="header-title">
         <h1>Beyond <span>the Booking</span></h1>
-        <p>Customer profiling guide for spectator sports travel</p>
+        <p>Customer profiling guide for Edusport</p>
       </div>
     </div>
   </div>
@@ -735,7 +744,6 @@
       <div class="flags-title">⚠️ &nbsp;Red Flags — Qualify These Before Going Further</div>
       <div class="flags-grid">
         <div class="flag-item">No confirmed decision-maker or budget authority on a group booking</div>
-        <div class="flag-item">International trip with no mention of travel insurance</div>
         <div class="flag-item">Tight timeline with no flexibility acknowledged by the customer</div>
         <div class="flag-item">A returning customer being treated like a first-time enquiry</div>
         <div class="flag-item">Asking for preferences, dietary needs, or trip details that are already logged in FreshCRM</div>
