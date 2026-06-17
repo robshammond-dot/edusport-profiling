@@ -39,6 +39,11 @@
   }
 
   @media print {
+    * {
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+      color-adjust: exact !important;
+    }
     body { background: white; font-size: 11px; }
     .page { box-shadow: none; margin: 0; max-width: 100%; border-radius: 0; }
     .print-btn { display: none !important; }
