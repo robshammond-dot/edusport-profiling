@@ -49,6 +49,7 @@
     .script-box,
     .profile-card,
     .event-box,
+    .flight-box,
     .flags,
     .payoff,
     .reminder { break-inside: avoid; page-break-inside: avoid; }
@@ -401,6 +402,56 @@
     line-height: 1.4;
   }
 
+  /* FLIGHTS BOX */
+  .flight-box {
+    background: var(--blue-light);
+    border: 1px solid var(--blue-mid);
+    border-radius: 8px;
+    padding: 16px 18px;
+    margin-bottom: 24px;
+  }
+  .flight-box-title {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--blue);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .flight-intro {
+    font-size: 12px;
+    color: var(--text-mid);
+    line-height: 1.5;
+    margin-bottom: 12px;
+  }
+  .flight-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .flight-item {
+    background: white;
+    border: 1px solid var(--blue-mid);
+    border-radius: 6px;
+    padding: 10px;
+  }
+  .flight-item .f-label {
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--blue);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;
+  }
+  .flight-item p {
+    font-size: 11px;
+    color: var(--text-mid);
+    line-height: 1.4;
+  }
+
   /* RED FLAGS */
   .flags {
     background: var(--red-soft);
@@ -739,6 +790,28 @@
       </div>
     </div>
 
+    <!-- FLIGHTS -->
+    <div class="section-label">Flights — Price Isn't the Only Conversation</div>
+
+    <div class="flight-box">
+      <div class="flight-box-title">✈️ &nbsp;Communicate the trade-off, don't just book cheapest</div>
+      <p class="flight-intro">The cheapest fare isn't automatically the right fare. A loyal, high-value traveller may happily pay more for flexibility, comfort, or a direct route, but only if that choice is actually put in front of them. Defaulting a five-star traveller onto the lowest fare without having that conversation isn't a saving, it's a missed one.</p>
+      <div class="flight-grid">
+        <div class="flight-item">
+          <div class="f-label">Know the fare rules</div>
+          <p>Change and cancellation fees, refund eligibility, baggage allowance, and name change policies all differ by fare class. Know what each price actually includes before you quote it.</p>
+        </div>
+        <div class="flight-item">
+          <div class="f-label">Present the choice, don't make it for them</div>
+          <p>"This fare is R[x] cheaper but non-refundable with one stop. This one is R[y] more, fully flexible and direct. Which matters more for this trip?"</p>
+        </div>
+        <div class="flight-item">
+          <div class="f-label">Read the traveller</div>
+          <p>Don't assume price is always the deciding factor for a returning or high-value customer. Ask what matters more this time, cost or flexibility.</p>
+        </div>
+      </div>
+    </div>
+
     <!-- RED FLAGS -->
     <div class="flags">
       <div class="flags-title">⚠️ &nbsp;Red Flags — Qualify These Before Going Further</div>
@@ -748,6 +821,7 @@
         <div class="flag-item">A returning customer being treated like a first-time enquiry</div>
         <div class="flag-item">Asking for preferences, dietary needs, or trip details that are already logged in FreshCRM</div>
         <div class="flag-item">Large group with no single point of contact identified</div>
+        <div class="flag-item">A loyal or high-value traveller booked on the cheapest fare without discussing flexibility or upgrades</div>
       </div>
     </div>
 
